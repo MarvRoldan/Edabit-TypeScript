@@ -10,7 +10,7 @@ function sayHelloBye(name, num) {
         console.log("Please enter 1 or 0");
     }
 }
-sayHelloBye("Marvin", 1);
+sayHelloBye("Marvin", 0);
 function factorial(n) {
     if (n < 0) {
         return -1;

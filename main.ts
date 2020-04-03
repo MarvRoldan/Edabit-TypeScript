@@ -1,6 +1,6 @@
 // -- Which Function Returns the Larger Number? --
 function sayHelloBye(name: string, num: number) {
-  const n = name[0].toUpperCase() + name.slice(1);
+  const n: string = name[0].toUpperCase() + name.slice(1);
 
   if (num === 1) {
     console.log("Hello " + n);
@@ -10,7 +10,7 @@ function sayHelloBye(name: string, num: number) {
     console.log("Please enter 1 or 0");
   }
 }
-sayHelloBye("Marvin", 1);
+sayHelloBye("Marvin", 0);
 
 // -- Recursion: Factorials --
 function factorial(n: number): number {
