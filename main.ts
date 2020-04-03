@@ -10,13 +10,13 @@ function sayHelloBye(name: string, num: number) {
     console.log("Please enter 1 or 0");
   }
 }
-sayHelloBye("Marvin", 5);
+sayHelloBye("Marvin", 1);
 
 // -- Recursion: Factorials --
 function factorial(n: number): number {
   if (n < 0) {
     return -1;
-  } else if (n == 0) {
+  } else if (n === 0) {
     return 1;
   } else {
     return n * factorial(n - 1);
@@ -38,4 +38,34 @@ function returnEndOfNumber(num: number) {
     console.log(num + "-TH");
   }
 }
-returnEndOfNumber(7);
+returnEndOfNumber(1);
+
+// -- Get the Date --
+// https://www.w3schools.com/js/js_switch.asp
+function getDay(day: number) {
+  const dateGiven = new Date(day);
+
+  switch (dateGiven.getDay()) {
+    case 1:
+      return "Monday";
+      break;
+    case 2:
+      return "Tuesday";
+      break;
+    case 3:
+      return "Wednesday";
+      break;
+    case 4:
+      return "Thursday";
+      break;
+    case 5:
+      return "Friday";
+      break;
+    case 6:
+      return "Saturday";
+      break;
+    case 0:
+      return "Sunday";
+      break;
+  }
+}
